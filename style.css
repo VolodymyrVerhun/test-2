@@ -91,3 +91,61 @@ padding: 0px;
     display: flex;
     justify-content: space-around;
 }
+
+.describe {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(63, 63, 66);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-describe {
+    display: flex;
+    justify-content: space-around;
+}
+
+.red {
+    background-color: red;
+    width: 150px;
+    height: 40px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.green {
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 150px;
+    height: 40px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.block-button {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
