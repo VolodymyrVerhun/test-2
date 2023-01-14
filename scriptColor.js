@@ -1,37 +1,37 @@
 
 const btn = document.querySelectorAll('.button')
-const divBlock = document.querySelectorAll('.describe')
-
-btn[0].addEventListener('click', makeRed);
-
-function makeRed() {
-    if (btn[0].classList.contains('button')) {
-        btn[0].classList.replace('button', 'red')} else {
-            btn[0].classList.replace('red', 'button')
-        };
-    if (!btn[0].classList.contains('button')) {
-    divBlock[0].textContent = 'STOP';} else {divBlock[0].textContent = ''}
-};
+const divBlock = document.querySelectorAll('.text')
 
 
-btn[1].addEventListener('click', makeYellow);
+// btn.forEach((bat, index) => {
+//     bat.addEventListener('click', (evt) => {
+//         btn.forEach(bat => {
+//             bat.classList.replace('red', 'button')
+//         });
+//         bat.classList.replace('button', 'red');
 
-function makeYellow() {
-    if (btn[1].classList.contains('button')) {
-        btn[1].classList.replace('button', 'yellow')} else {
-            btn[1].classList.replace('yellow', 'button')
-        };
-        if (!btn[1].classList.contains('button')) {
-            divBlock[1].textContent = 'WAIT';} else {divBlock[1].textContent = ''}
+//         divBlock.forEach(textTitle => {
+//             textTitle.classList.remove('active-text')
+//         });
+//         divBlock[index].classList.add('active-text');
+
+//     })
+// })
+
+for (let i = 0; i < btn.length; i += 1) {
+btn[i].addEventListener('click', () => {
+    for (let i = 0; i < btn.length; i += 1) {
+        btn[i].classList.replace('red', 'button')
     };
+    btn[i].classList.replace('button', 'red');
 
-btn[2].addEventListener('click', makeGreen);
+    for( let t = 0; t < divBlock.length; t += 1) {
+        divBlock[t].classList.remove('active-text')
+    };
+    divBlock[i].classList.add('active-text')
 
-function makeGreen() {
-    if (btn[2].classList.contains('button')) {
-        btn[2].classList.replace('button', 'green')} else {
-            btn[2].classList.replace('green', 'button')
-        };
-        if (!btn[2].classList.contains('button')) {
-            divBlock[2].textContent = 'GO';} else {divBlock[2].textContent = ''}
-    }
+
+} )
+}
+
+

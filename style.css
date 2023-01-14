@@ -152,21 +152,10 @@ padding: 0px;
     justify-content: space-around;
 }
 
-.main-describe.third {
-    background-color: rgb(51, 139, 64);
-    height: 200px;
-    width: 600px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-   
+.text {
+    display: none;
 }
 
-.active {
-    width: 150px;
-    height: 40px;
-    border-radius: 35px;
-    border: none;
-    cursor: pointer;
-    background-color: rgb(16, 73, 10);
+.active-text {
+    display: block;
 }
