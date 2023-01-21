@@ -110,7 +110,7 @@ padding: 0px;
     justify-content: space-around;
 }
 
-.red {
+.red.active {
     background-color: red;
     width: 150px;
     height: 40px;
@@ -119,7 +119,7 @@ padding: 0px;
     cursor: pointer;
 }
 
-.green {
+.green.active {
     background-color: green;
     width: 150px;
     height: 40px;
@@ -128,7 +128,7 @@ padding: 0px;
     cursor: pointer;
 }
 
-.yellow {
+.yellow.active {
     background-color: yellow;
     width: 150px;
     height: 40px;

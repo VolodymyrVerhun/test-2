@@ -1,7 +1,23 @@
 
 const blockBtn = document.querySelector('.block-button');
-const btn = document.querySelectorAll('.button');
+const btns = document.querySelectorAll('.button');
 const fotoAll = document.querySelectorAll('.foto');
+
+
+
+btns.forEach( function (tab, index) {
+    tab.addEventListener('click', (event) => {
+        btns.forEach(tab => {
+            tab.classList.remove('active')
+        })
+        event.target.classList.add('active');
+
+        fotoAll.forEach(foto => {foto.classList.remove('active-foto')});
+         fotoAll[index].classList.add('active-foto')
+    });
+   
+})
+
 
 // // blockBtn.addEventListener('click', changeBtn);
  
@@ -18,16 +34,13 @@ const fotoAll = document.querySelectorAll('.foto');
 //     // }
 //     // event.target.classList.add('active')
 // };
+// const handle = (evt) => {
+//     btns.forEach(tab => {
+//         tab.classList.remove('active')
+//     });
+//     evt.target.classList.add('active');
 
-btn.forEach(function (tab, index) {
-    tab.addEventListener('click', (evt) => {
-        btn.forEach(tab => {
-            tab.classList.remove('active')
-        });
-        tab.classList.add('active');
-
-        fotoAll.forEach(foto => {foto.classList.remove('active-foto')});
-        fotoAll[index].classList.add('active-foto')
-;
-    })
-})
+//     fotoAll.forEach(foto => {foto.classList.remove('active-foto')});
+//     fotoAll[index].classList.add('active-foto')
+// ;
+// }

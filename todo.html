@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="head">
+        <ul class="head-list">
+            <li><a href="./index.html">вибери мене</a></li>
+            <li><a href="./secondary.html">ні вибери мене</a></li>
+            <li><a href="./third.html">ні ні вибери мене</a></li>
+            <li><a href="./todo.html">tittle4</a></li>
+        </ul>
+    </header>
+    <div class="container">
+		<div class="inner-container">
+			<div class="list-tittle">перелік завдань на сьогодні</div>
+
+		<!-- List of tasks -->
+		<div class="block-list">
+			<ul id="tasksList" class="list-group">
+
+			</ul>
+		</div>
+		<!-- //List of tasks -->
+
+		<!-- Form -->
+		<div class="form-block" >
+			<div class="add-item">додати завдання</div>
+			<div class="form-inner-block">
+				<form id="form">
+					<div class="form-group">
+						<input type="text" class="input-form" id="taskInput" placeholder="напиши завдання" required>
+						
+					</div>
+					<button type="submit" class="btn active">додати</button>
+				</form>
+			</div>
+		</div>
+		</div>
+		
+		
+		
+	</div>
+
+<script src="./todoscript.js" type="module"></script>
+</body>
+</html>

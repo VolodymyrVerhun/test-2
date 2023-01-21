@@ -19,11 +19,12 @@ const divBlock = document.querySelectorAll('.text')
 // })
 
 for (let i = 0; i < btn.length; i += 1) {
-btn[i].addEventListener('click', () => {
-    for (let i = 0; i < btn.length; i += 1) {
-        btn[i].classList.replace('red', 'button')
+btn[i].addEventListener('click', (event) => {
+    console.log(event.target.classList);
+    for (let j = 0; j < btn.length; j += 1) {
+        btn[j].classList.remove('active')
     };
-    btn[i].classList.replace('button', 'red');
+    event.target.classList.add('active');
 
     for( let t = 0; t < divBlock.length; t += 1) {
         divBlock[t].classList.remove('active-text')

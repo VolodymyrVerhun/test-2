@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    background-color: rgb(167, 192, 167);
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-container {
+    width: 70%;
+    height: 70%;
+    background-color: rgb(243, 244, 239);
+   display: flex;
+  
+   flex-direction: column;
+   border-radius: 20px;
+   padding: 50px;
+   padding: 50px 100px;
+   box-sizing: border-box;
+}
+.head {
+    background-color: rgb(190, 190, 226);
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+   
+}
+
+.head-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-tittle {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.form-block {
+   
+    height: 30%;
+    background-color: rgb(229, 237, 223);
+    border-radius: 20px;
+    padding: 10px;
+}
+.add-item {
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+.form-inner-block {
+  
+}
+
+.input-form {
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: white;
+    height: 25px;
+    padding: 0 10px;
+}
+
+.btn {
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: rgb(233, 233, 239);
+    background-color: rgb(233, 233, 239);
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.span-done {
+  text-decoration: line-through;
+}
