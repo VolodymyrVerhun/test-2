@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./drop.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="head">
+        <ul class="head-list">
+            <li><a href="./index.html">вибери мене</a></li>
+            <li><a href="./secondary.html">ні вибери мене</a></li>
+            <li><a href="./third.html">ні ні вибери мене</a></li>
+            <li><a href="./todo.html">todo</a></li>
+            <li><a href="./drop.html">dropdown</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="dropdown">
+            <button class="button" data-path="one">
+              Lviv region
+            </button>
+            <div class="dropdown-menu" data-target="one">
+              <a class="dropdown-item" href="#">Yavoriv</a>
+              <a class="dropdown-item" href="#">Ryasne 1</a>
+              <a class="dropdown-item" href="#">Ryasne 2</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="button" data-path="two">
+              Lutsk region
+            </button>
+            <div class="dropdown-menu" data-target="two">
+              <a class="dropdown-item" href="#">Volodymyr-Volynskyi</a>
+              <a class="dropdown-item" href="#">Tsuman</a>
+              <a class="dropdown-item" href="#">Kovel</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="button" data-path="three">
+              Ternopil region
+            </button>
+            <div class="dropdown-menu" data-target="three">
+              <a class="dropdown-item" href="#">Zbaraizh</a>
+              <a class="dropdown-item" href="#">Kozova</a>
+              <a class="dropdown-item" href="#">Chortkiv</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="button" data-path="four">
+                Ivano-Frankivsk region
+            </button>
+            <div class="dropdown-menu" data-target="four">
+              <a class="dropdown-item" href="#">Kalush</a>
+              <a class="dropdown-item" href="#">Kosiv</a>
+              <a class="dropdown-item" href="#">Kolomyia</a>
+            </div>
+          </div>
+    </div>
+    <script src="./drop.js" type="module"></script>
+</body>
+</html>

@@ -159,3 +159,7 @@ padding: 0px;
 .active-text {
     display: block;
 }
+
+.dropdown {
+    width: 200px;
+}

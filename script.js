@@ -1,4 +1,5 @@
 const form = document.querySelector('.block-input');
+console.log(form);
 const formInput = document.querySelector('#taskInput');
 const ulList = document.querySelector('.block-list');
 
